@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar :cartCount="cartCount" @toggle-cart="toggleView" />
+    <HeaderCard :cartCount="cartCount" @toggle-cart="toggleView" />
     <div v-if="showCart">
       <Cart
         :cart="cart"
@@ -26,14 +26,14 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import HeaderCard from './components/HeaderCard.vue'
 import LessonList from './views/CourseListPage.vue'
 import Cart from './views/CartPage.vue'
 
 console.log(`base url ${__API_BASE_URL__}`)
 
 export default {
-  components: { NavBar, LessonList, Cart },
+  components: { HeaderCard, LessonList, Cart },
   data() {
     return {
       lessons: [],
