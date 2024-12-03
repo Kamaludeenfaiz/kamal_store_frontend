@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="border p-4 bg-light">
+    <div class="border p-4 bg-white">
       <div class="d-flex justify-content-between">
         <div>
           <h3>{{ lesson.subject }}</h3>
