@@ -27,7 +27,7 @@
 
 <script>
 import HeaderCard from './components/HeaderCard.vue'
-import LessonList from './views/CourseListPage.vue'
+import LessonList from './views/LessonListPage.vue'
 import Cart from './views/CartPage.vue'
 
 console.log(`base url ${__API_BASE_URL__}`)

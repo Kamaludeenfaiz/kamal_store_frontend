@@ -17,12 +17,12 @@
       </button>
       <ul class="navbar-nav ms-auto">
         <button
-          class="btn btn-light"
+          class="btn btn-warning"
           :disabled="cartCount === 0"
           @click="toggleCart"
         >
           <i class="bi bi-cart3"></i>
-          <span class="text-success fw-bolder">({{ cartCount }})</span>
+          <span class="text-dark fw-bolder">({{ cartCount }})</span>
         </button>
       </ul>
     </div>
