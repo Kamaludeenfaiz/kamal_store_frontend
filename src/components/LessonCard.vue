@@ -12,14 +12,14 @@
         </div>
 
         <img
-          :src="getImageUrl(lesson.imageUrl)"
+          :src="getImageUrl(lesson.image)"
           alt="lesson.imageUrl"
           class="img-fluid"
           style="width: 90px; height: 100%"
         />
       </div>
       <button
-        class="btn btn-lg btn-primary col-12"
+        class="btn btn-lg btn-success col-12"
         @click="addToCart"
         :disabled="lesson.spaces <= 0"
       >
