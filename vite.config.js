@@ -17,7 +17,7 @@ export default defineConfig({
     __API_BASE_URL__: JSON.stringify(
       process.env.NODE_ENV === 'production'
         ? 'https://store-backend-54jf.onrender.com/api' // Production API
-        : 'http://localhost:5050/api', // Development API
+        : 'http://localhost:7000/api', // Development API
     ),
   },
 })

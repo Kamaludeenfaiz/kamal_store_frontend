@@ -6,7 +6,7 @@
           <label
             v-for="option in sortOptions"
             :key="option"
-            class="btn btn-outline-primary my-2 d-block"
+            class="my-2 d-block form-check-label"
             :class="{ active: sortAttribute === option }"
           >
             <input
@@ -14,17 +14,18 @@
               name="attribute"
               :value="option"
               v-model="sortAttribute"
+              class="form-check-input"
             />
             {{ option.charAt(0).toUpperCase() + option.slice(1) }}
           </label>
         </div>
         <h5 class="mt-3">Order:</h5>
         <div>
-          <label class="btn btn-outline-secondary my-2 d-block">
+          <label class="btn btn-outline-success my-2 d-block">
             <input type="radio" name="order" value="asc" v-model="sortOrder" />
             Ascending
           </label>
-          <label class="btn btn-outline-secondary d-block">
+          <label class="btn btn-outline-success d-block">
             <input type="radio" name="order" value="desc" v-model="sortOrder" />
             Descending
           </label>
