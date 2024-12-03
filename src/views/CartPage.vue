@@ -31,7 +31,7 @@
             <div class="align-self-center">
               <button
                 @click="removeFromCart(cartItem._id)"
-                class="btn btn-lg btn-dark"
+                class="btn btn-lg btn-outline-dark"
               >
                 Remove Course
               </button>

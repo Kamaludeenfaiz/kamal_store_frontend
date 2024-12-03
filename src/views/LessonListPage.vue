@@ -37,12 +37,12 @@
         <!--Search bar full text search-->
 
         <section class="row g-3">
-          <div class="mb-4 col-12 col-md-8 mx-auto">
+          <div class="mb-4 col-12 col-md-8">
             <!-- Search Input -->
             <input
               type="text"
               class="form-control mb-4"
-              placeholder="Search lessons by title, location, price, or availability..."
+              placeholder="Search lessons by title, location, price, or spaces..."
               v-model="searchQuery"
               @input="performSearch"
             />
@@ -50,7 +50,7 @@
         </section>
         <section class="row g-3">
           <LessonCard
-            class="col-12 col-md-6 col-lg-4 card-container"
+            class="col-12 col-md-6 card-container"
             v-for="lesson in sortedLessons"
             :key="lesson.id"
             :lesson="lesson"
@@ -136,9 +136,14 @@ export default {
   },
 }
 </script>
-<style>
+<style focused>
 .card-container {
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.form-check-input:checked {
+  background-color: #36fd0d !important;
+  border-color: #48b520 !important;
 }
 </style>
