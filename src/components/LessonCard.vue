@@ -19,7 +19,7 @@
         />
       </div>
       <button
-        class="btn btn-lg btn-success col-12"
+        class="btn btn-lg btn-success col-12 col-md-8 mx-auto"
         @click="addToCart"
         :disabled="lesson.spaces <= 0"
       >
