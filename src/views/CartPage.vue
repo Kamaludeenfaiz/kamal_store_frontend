@@ -83,7 +83,6 @@ export default {
     getImageUrl(imagePath) {
       const baseUrl =
         process.env.NODE_ENV === 'production' ? '/kamal_store_frontend/' : '' // Development URL
-      console.log(`baseURL: ${baseUrl}${imagePath}`)
       return `${baseUrl}${imagePath}` // e.g., images/guitar-icon.jpg
     },
   },
