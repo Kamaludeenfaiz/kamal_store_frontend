@@ -40,7 +40,7 @@
 </template>
 
 <script>
-const baseUrl = window.config?.API_BASE_URL || 'http://localhost:5050/api'
+const baseUrl = window.config?.API_BASE_URL || 'http://localhost:7000/api'
 export default {
   props: {
     cart: {
