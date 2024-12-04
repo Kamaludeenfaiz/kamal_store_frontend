@@ -3,13 +3,14 @@
 
 
 ## Github Repository
-
+```sh
 https://github.com/Kamaludeenfaiz/
+```
 
 ## Github pages
-
+```sh
 https://kamaludeenfaiz.github.io/kamal_store_frontend/
-
+```
 
 ## Project Setup
 
