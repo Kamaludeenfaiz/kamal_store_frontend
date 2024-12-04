@@ -15,7 +15,7 @@
     </div>
 
     <div class="mb-3">
-      <label for="phone" class="form-label">Phone</label>
+      <label for="phone" class="form-label">Phone Number</label>
       <input
         type="text"
         id="phone"
@@ -30,7 +30,7 @@
 
     <button
       type="submit"
-      class="btn btn-success w-100"
+      class="btn btn-warning w-100"
       :disabled="!isFormValid"
     >
       <span v-if="loading" class="spinner-border text-light"></span>
