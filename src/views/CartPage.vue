@@ -9,8 +9,8 @@
         >
           <div class="d-flex justify-content-between border p-4 rounded-3">
             <img
-              v-bind:src="getImageUrl(cartItem.imageUrl)"
-              alt="item.imageUrl"
+              v-bind:src="getImageUrl(cartItem.image)"
+              alt="item.image"
               class="img-fluid"
               style="width: 90px; height: 100%"
             />
