@@ -16,7 +16,7 @@ export default defineConfig({
     // Dynamically inject the API base URL
     __API_BASE_URL__: JSON.stringify(
       process.env.NODE_ENV === 'production'
-        ? 'http://localhost:7000/api' // Production API
+        ? 'https://kamal-store-backend.onrender.com' // Production API
         : 'http://localhost:7000/api', // Development API
     ),
   },
