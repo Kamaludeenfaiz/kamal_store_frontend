@@ -13,7 +13,7 @@
 
         <img
           :src="getImageUrl(lesson.image)"
-          alt="lesson.imageUrl"
+          alt="lesson.image"
           class="img-fluid"
           style="width: 90px; height: 100%"
         />
@@ -43,7 +43,7 @@ export default {
 
     getImageUrl(imagePath) {
       const baseUrl =
-        process.env.NODE_ENV === 'production' ? '/store-frontend' : '' // Development URL
+        process.env.NODE_ENV === 'production' ? '/kamal_store_frontend' : '' // Development URL
       console.log(`baseURL: ${baseUrl}${imagePath}`)
       return `${baseUrl}${imagePath}` // e.g., /images/lesson1.jpg
     },
